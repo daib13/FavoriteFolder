@@ -1,0 +1,3 @@
+#
+http://arxiv.org/pdf/1602.08977v1.pdf
+Find lightcurve features using machine learning
