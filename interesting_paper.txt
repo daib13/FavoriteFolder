@@ -1,6 +1,0 @@
-#
-http://arxiv.org/pdf/1602.08977v1.pdf
-Find lightcurve features using machine learning
-
-http://arxiv.org/pdf/1511.06391.pdf
-Using LSTM to handle different input dimensions
