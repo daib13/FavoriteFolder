@@ -8,7 +8,7 @@
 Main idea: using orthogonal matching pursuit to find the affinity matrix (much faster)
 Prons: beautiful theory, can solver problems with tens of thousands of samples (comparing to several thousand samples in conventional methods)
 
-2. Scalable Sparse Subspace Clustering (Xi Pent et al.)
+2. Scalable Sparse Subspace Clustering (Xi Peng et al.)
 Not read yet.
 
 ## Deep model
@@ -18,7 +18,31 @@ Prons: VERY STABLE.
 Main drawback: Some features are not updated after pretraining (meaning they are fixed). Still neet to extract feature manually.
 (Fast l1-minimization algorithms and an application in robust face recognition: a review (Allen et al.). They use this paper to solve the l1-minimization problem)
 
+2. Deep Subspace Clustering Networks (Pan ji et al.)
+
 # Variational Autoencoder
+
+
+# Optimization
+
+## Saddle points
+1. Gradient Descent Can Take Exponential Time to Escape Saddle Points (Simon S. Du et al.)
+
+2. How to Escape Saddle Points Efficiently (Chi Jin et al.)
+
+3. Gradient Descent Converges to Minimizers (Jason D. Lee et al.)
+
+## L1 minimization
+1. Fast L1-Minimization Algorithms and An Application in Robust Face Recognition: A Review
+
+
+
+# Measure-Theoretic Probability Theory
+A good tutorial: http://www.math.wisc.edu/~roch/grad-prob/index.html
+
+
+# Math Course on Youtube
+https://www.youtube.com/channel/UCcAtD_VYwcYwVbTdvArsm7w
 
 
 # Others
