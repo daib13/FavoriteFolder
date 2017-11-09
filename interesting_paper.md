@@ -38,6 +38,12 @@ Main drawback: The energy function is not good. The reconstruction loss can be o
 
 1. Variational Dropout and the Local Reparameterization Trick
 
+2. Variational Dropout Sparsifies Deep Neural Networks
+
+3. Bayesian Compression for Deep Learning
+
+4. Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks
+
 # Optimization
 
 ## Saddle points
@@ -68,3 +74,5 @@ https://www.youtube.com/channel/UCcAtD_VYwcYwVbTdvArsm7w
 # Others
 
 Coulomb GANs: Provably Optimal Nash Equilibria via Potential Fields (Thomas et al.)
+
+Standford course on theories of deep learning: https://www.researchgate.net/project/Theories-of-Deep-Learning
