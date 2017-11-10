@@ -36,7 +36,11 @@ Main drawback: The energy function is not good. The reconstruction loss can be o
 
 # Variational Autoencoder
 
-1. Variational Dropout and the Local Reparameterization Trick
+1. Variational Dropout and the Local Reparameterization Trick (Diederik P. Kingma et al.)
+
+Dropout can be viewed as a stochastic variational inference of the weights. In this paper, they use local reparameterization trick to replace the global reparameterization (reparameterize on every variable, which is local to every sample, rather than reparameterize on weights, which is global) to reduce the variance of the gradients. Thus achieves better results.
+
+Can we also use local reparameterization trick (later reparameterization) in VAE to improve the performance?
 
 2. Variational Dropout Sparsifies Deep Neural Networks
 
