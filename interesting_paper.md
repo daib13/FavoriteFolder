@@ -40,11 +40,21 @@ Main drawback: The energy function is not good. The reconstruction loss can be o
 
 Dropout can be viewed as a stochastic variational inference of the weights. In this paper, they use local reparameterization trick to replace the global reparameterization (reparameterize on every variable, which is local to every sample, rather than reparameterize on weights, which is global) to reduce the variance of the gradients. Thus achieves better results.
 
-Can we also use local reparameterization trick (later reparameterization) in VAE to improve the performance?
+**Can we also use local-reparameterization trick (later reparameterization) in VAE to improve the performance?**
+
+**What is the relationship between variational weight and variational neuron?**
 
 2. Variational Dropout Sparsifies Deep Neural Networks
 
+They use two strategies to improve the variational dropout: 1) Replace the posterior of $w$ from $\mathcal{N}(\theta,\theta\alpha)$ to $\mathcal{N}(\theta,\sigma^2)$; 2) Use a better KL divergence approximation between $p(w)$ and $q(w)$.
+
+The main drawback of the original paper is that $\alpha$ cannot be larger than $1$, which means the dropout rate could only be no larger than $0.5$. In this paper, the dropout rate can be nearly $1$ thus makes the network weight sparse.
+
 3. Bayesian Compression for Deep Learning
+
+Comparing to the previous paper, they further add a group sparsity term to motivate the group sparsity property. In previous paper, all the weights are independant ($p(w_{ij})\propto\log|w_{ij}|$). They use another parameter $z$ to control the group sparsity, thus $p(w_{ij})\sim\mathcal{N}(w_{ij};0,z_i^2)$ and $p(z)$ follows a half-Cauchy distribution: $\mathcal{C}^+(0,s)=2\left(s\pi\left(1+(z/s)^2\right)\right)^{-1}$, where $s$ is also a tunable parameter.
+
+**Can we also add group sparsity to VAE?** 
 
 4. Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks
 
