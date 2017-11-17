@@ -79,6 +79,8 @@ A good tutorial: http://www.math.wisc.edu/~roch/grad-prob/index.html
 A course:
 http://nptel.ac.in/courses/111101005/
 
+Notes on measure and probability:
+http://www.stat.washington.edu/people/pdhoff/courses/581/LectureNotes/mtheory.pdf
 
 # Math Course on Youtube
 
@@ -90,3 +92,4 @@ https://www.youtube.com/channel/UCcAtD_VYwcYwVbTdvArsm7w
 Coulomb GANs: Provably Optimal Nash Equilibria via Potential Fields (Thomas et al.)
 
 Standford course on theories of deep learning: https://www.researchgate.net/project/Theories-of-Deep-Learning
+
